@@ -36,13 +36,13 @@ struct ContentView: View {
         case "meters":
             return valueInMeters
         case "km":
-            return valueInMeters * 1000
+            return valueInMeters / 1000
         case "feet":
             return valueInMeters * 3.28084
         case "yards":
             return valueInMeters * 1.09361
         case "miles":
-            return valueInMeters * 1609.344
+            return valueInMeters / 1609.344
         default:
             return 0
         }
